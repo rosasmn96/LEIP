@@ -183,14 +183,22 @@
                                             <th>Number</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>{{contactAgency}}</td>
-                                            <td>{{contactCounty}}</td>
-                                            <td>{{contactTownship}}</td>
-                                            <td>{{contactCincyDirectory}}</td>
-                                            <td>{{contactNumber}}</td>
-                                        </tr>
+                                    <tbody id="tableBody">
+                                        <script>
+                                            var contactAgencies = {{contactAgencies|tojson}};
+                                            var contactCounties = {{contactCounties|tojson}};
+                                            var contactTownships = {{contactTownships|tojson}};
+                                            var contactCincyDirectories = {{contactCincyDirectories|tojson}};
+                                            var contactNumbers = {{contactNumbers|tojson}};
+                                            var i;
+                                            var html = "";
+
+                                            for (i = 0; i < contactAgencies.length; i++) {
+                                                html += "<tr><td>" + contactAgencies[i] + "</td><td>" + contactCounties[i] + "</td><td>" + contactTownships[i] + "</td><td>" + contactCincyDirectories[i] + "</td><td>" + contactNumbers[i] + "</td></tr>";
+                                            }
+
+                                            document.getElementById("tableBody").innerHTML = html;
+                                        </script>
                                     </tbody>
                                     <tfoot>
                                         <tr>
