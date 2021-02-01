@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LEIP - Preserving Digital Evidence</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-FormModal-Contact-Form-with-Google-Map.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Data-Table.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><img src="assets/img/LEIP.png" width="200" height="200">
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sexoffenderinfo"><i class="fa fa-map-marker"></i><span>Sex Offender Search</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/phonedirectory"><i class="fa fa-book"></i><span>Phone Directory</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/isp"><i class="fa fa-signal"></i><span>Internet Service Provider Information</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/preservedigitalevidence"><i class="fa fa-laptop"></i><span>Preserving Digital Evidence</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group" style="border-style: none;"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img src="assets/img/LEIP-1.png" style="height: 50px;"></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <a
+                                            class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h1 class="text-primary m-0 font-weight-bold">Preserving Digital Evidence</h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="m-0">In the new realm of cybercrimes and technology, preserving digital evidence has become incredibly important to a case. Knowing the fundamentals of knowing what to do when entering a crime scene can save vital evidence, here
+                                are the need to knows.&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow border-left-primary py-2">
+                    <div class="card-body">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col mr-2">
+                                <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>Do not change the current state of the device</span></div>
+                                <div class="text-dark font-weight-bold h5 mb-0"><span>If the device is OFF, it must be kept OFF. If the device is ON, it must be kept ON. Call a forensics expert if you are unsure.</span></div>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-power-off fa-2x text-gray-300"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow border-left-success py-2">
+                    <div class="card-body">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col mr-2">
+                                <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>power down the device</span></div>
+                                <div class="text-dark font-weight-bold h5 mb-0"><span>In the case of mobile phones, If it is not charged, do not charge it. In case, the mobile phone is ON, power it down to prevent any data wiping or data overwriting due to automatic booting.</span></div>
+                            </div>
+                            <div class="col-auto"><i class="fas fa-phone fa-2x text-gray-300"></i></div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-warning py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-warning font-weight-bold text-xs mb-1"><span><strong>Do not leave the device in an open area or unsecured place</strong></span></div>
+                                    <div class="text-dark font-weight-bold h5 mb-0"><span>Ensure that the device is not left unattended in an open area or unsecured area. You need to document things like- where the device is, who has access to the device, and when it is moved.</span></div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-unlock fa-2x text-gray-300"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-info py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-info font-weight-bold text-xs mb-1"><span><strong>Do not plug any external storage media in the device</strong></span></div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span>Memory cards, USB thumb drives, or any other storage media that you might have, should not be plugged into the device.</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto"><i class="fab fa-usb fa-2x text-gray-300"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-primary py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span><strong>Do not copy anything to or from the device</strong></span></div>
+                                    <div class="text-dark font-weight-bold h5 mb-0"><span>Copying anything to or from the device will cause changes in the slack space of the memory.</span></div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-file-alt fa-2x text-gray-300"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-success py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span><strong>Take a picture of the piece of the evidence</strong></span></div>
+                                    <div class="text-dark font-weight-bold h5 mb-0"><span>Ensure to take the picture of the evidence from all the sides. If it is a mobile phone, capture pictures from all the sides, to ensure the device has not tampered till the time forensic experts arrive.</span></div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-camera fa-2x text-gray-300"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-warning py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-warning font-weight-bold text-xs mb-1"><span><strong>Make sure you know the PIN/ Password Pattern of the device</strong></span></div>
+                                    <div class="text-dark font-weight-bold h5 mb-0"><span>It is very important for you to know the login credentials of the device and share it with the forensic experts, for them to carry their job seamlessly.</span></div>
+                                </div>
+                                <div class="col-auto"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-clipboard-data fa-2x text-gray-300">
+  <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+  <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+  <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"></path>
+</svg></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-info py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-info font-weight-bold text-xs mb-1"><span><strong>Do not open anything like pictures, applications, or files on the device</strong></span></div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span>Opening any application, file, or picture on the device may cause losing the data or memory being overwritten.</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-primary py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span><strong>Do not trust anyone without forensics training</strong></span></div>
+                                    <div class="text-dark font-weight-bold h5 mb-0"><span>Only a certified Forensics expert should be allowed to investigate or view the files on the original device. Untrained Persons may cause the deletion of data or the corruption of important information.</span></div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-file fa-2x text-gray-300"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-left-success py-2">
+                        <div class="card-body">
+                            <div class="row align-items-center no-gutters">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span><strong>Make sure you do not Shut down the computer, If required Hibernate it</strong></span></div>
+                                    <div class="text-dark font-weight-bold h5 mb-0"><span>Since the digital evidence can be extracted from both the disk drives and the volatile memory. Hibernation mode will preserve the contents of the volatile memory until the next system boot.</span></div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-power-off fa-2x text-gray-300"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="shadow card"><a class="btn btn-link text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">For more information visit these sites or ask a trusted forensics expert.</a>
+                    <div
+                        class="collapse show" id="collapse-4">
+                        <div class="card-body">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color: #4e73df;">U.S. Department of Justice</h4><img src="assets/img/DoJ.png" width="150" style="margin: 50px;margin-top: 0px;margin-bottom: 0px;">
+                                    <p class="card-text">Electronic Crime Scene Investigation: A Guide for First Responders, Second Edition.&nbsp;</p>
+                                    <div class="container" style="margin: 70px;margin-top: 1px;margin-bottom: 1px;"><a class="btn btn-primary active btn-link" role="button" href="https://www.ncjrs.gov/pdffiles1/nij/219941.pdf">GO&nbsp;<i class="fa fa-arrow-right"></i></a></div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color: #4e73df;">Forensic Science Simplified</h4><img src="assets/img/images.jpg" width="150" style="margin: 50px;margin-top: 0px;margin-bottom: 0px;">
+                                    <p class="card-text">A Simplified Guide to Digital Evidence</p>
+                                    <div class="container" style="margin: 70px;margin-top: 1px;margin-bottom: 1px;"><a class="btn btn-primary active btn-link" role="button" href="http://www.forensicsciencesimplified.org/digital/DigitalEvidence.pdf">GO&nbsp;<i class="fa fa-arrow-right"></i></a></div>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color: #4e73df;">John Sammons</h4><img src="assets/img/Screen%20Shot%202020-11-22%20at%208.03.46%20PM.png" width="150" style="margin: 50px;margin-top: 0px;margin-bottom: 0px;">
+                                    <p class="card-text">The Basics of Digital Forensics:&nbsp;<strong>The Primer for Getting Started in Digital Forensics</strong></p>
+                                    <div class="container" style="margin: 70px;margin-top: 1px;margin-bottom: 1px;"><a class="btn btn-primary active btn-link" role="button" href="https://books.google.com/books?id=iL0AS8Gno5YC&amp;lpg=PP1&amp;ots=VLr7PiHdfZ&amp;dq=the%20basics%20of%20digital%20forensics&amp;lr&amp;pg=PP1#v=onepage&amp;q&amp;f=false">GO&nbsp;<i class="fa fa-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Copyright © LEIP 2020</span></div>
+        </div>
+        </footer>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/Contact-FormModal-Contact-Form-with-Google-Map.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/Table-With-Search.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

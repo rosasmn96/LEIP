@@ -4,17 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>LEIP - ISP Search</title>
+    <title>LEIP - ISP Information Results</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/Contact-FormModal-Contact-Form-with-Google-Map.css">
     <link rel="stylesheet" href="assets/css/Data-Table-1.css">
     <link rel="stylesheet" href="assets/css/Data-Table.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/Table-With-Search-1.css">
     <link rel="stylesheet" href="assets/css/Table-With-Search.css">
     <link rel="stylesheet" href="assets/css/untitled-1.css">
@@ -30,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="/sexoffenderinfo"><i class="fa fa-map-marker"></i><span>Sex Offender Search</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="/phonedirectory"><i class="fa fa-book"></i><span>Phone Directory</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/isp"><i class="fa fa-signal"></i><span>Internet Service Provider Information</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/isp"><i class="fa fa-signal"></i><span>Internet Service Provider Information</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="/preservedigitalevidence"><i class="fa fa-laptop"></i><span>Preserving Digital Evidence</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"></div>
@@ -41,7 +39,7 @@
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group" style="border-style: none;"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
                                 <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
                             </div>
                         </form>
@@ -130,7 +128,7 @@
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img src="assets/img/LEIP-1.png" style="height: 50px;"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
                                         <a
                                             class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
@@ -140,33 +138,16 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h1 class="text-primary m-0 font-weight-bold">Internet Service Providers</h1>
-                    </div>
-                    <div class="card-body">
-                        <p class="m-0">The ISP List is a database of Internet service and other online content providers that will help you get the information you need for your case. For each provider listed you will find legal contact info and instructions on how
-                            to serve subpoenas, court orders, and search warrants.&nbsp;&nbsp;</p>
-                        <p>The ISP List is a law enforcement community effort. If you are unable to find an ISP, let us know and we'll add it. If you have any questions ciphering results, contact us and we will try to answer all your questions.&nbsp;</p>
-                    </div>
-                </div>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4"></h3>
-                    <div class="card shadow">
-                        <div class="card-header py-3">
-                            <p class="text-primary m-0 font-weight-bold">What ISP do you need information on?</p>
-                        </div>
-                        <div class="card-body">
-                            <form action="/ispResult" method="POST">
-                                <input type="text" name="ispName" style="width: 803px;">
-                                <button class="btn btn-primary" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
+                    <h3 class="text-dark mb-1">ISP Information Results</h3>
+                    <p>{{ispRow}}</p>
                 </div>
-                <footer></footer>
-                <footer></footer>
             </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2020</span></div>
+                </div>
+            </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -174,7 +155,6 @@
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-    <script src="assets/js/Contact-FormModal-Contact-Form-with-Google-Map.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/Table-With-Search.js"></script>
     <script src="assets/js/theme.js"></script>

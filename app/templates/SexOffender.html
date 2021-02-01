@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LEIP - Get Sex Offender Information</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-FormModal-Contact-Form-with-Google-Map.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Data-Table.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body class="text-left" id="page-top">
+    <div></div>
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><img src="assets/img/LEIP.png" width="200" height="200">
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sexoffenderinfo"><i class="fa fa-map-marker"></i><span>Sex Offender Search</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/phonedirectory"><i class="fa fa-book"></i><span>Phone Directory</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/isp"><i class="fa fa-signal"></i><span>Internet Service Provider Information</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/preservedigitalevidence"><i class="fa fa-laptop"></i><span>Preserving Digital Evidence</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group" style="border-style: none;"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 12, 2019</span>
+                                                <p>A new monthly report is ready to download!</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 7, 2019</span>
+                                                <p>$290.29 has been deposited into your account!</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="mr-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">December 2, 2019</span>
+                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
+                                        <h6 class="dropdown-header">alerts center</h6>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                                <div class="status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                                <div class="bg-warning status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                            </div>
+                                        </a>
+                                        <a class="d-flex align-items-center dropdown-item" href="#">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                                <div class="bg-success status-indicator"></div>
+                                            </div>
+                                            <div class="font-weight-bold">
+                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                            </div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                                </div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img src="assets/img/LEIP-1.png" style="height: 50px;"></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <a
+                                            class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid text-white-50">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h1 class="text-capitalize text-primary mb-0">Sex Offender Search</h1>
+                    </div>
+                    <div class="row">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div role="tablist" id="accordion-1"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4 class="text-left text-secondary border-primary">Search sex offender registries for US states. Click the state name for more information.</h4>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div role="tablist" id="accordion-19">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-19 .item-1" href="#accordion-19 .item-1">Alabama</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-19">
+                                    <div class="card-body">
+                                        <p class="card-text">The Alabama SOR Unit updates this information regularly, however, you are cautioned that the information contained on this site may not reflect the current residence, status, or other information regarding the offender.
+                                            If you believe that any of the information found in these records is in error, please send us your comments.Prior to including the individual on the website, ALEA did not consider or assess the individual’s
+                                            specific risk or reoffense or current dangerousness; inclusion on the website is based solely on an individual’s conviction record and state law. The Legislature’s purpose in providing this data is to make the
+                                            information more easily available and accessible, not to warn about any specific individual.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button"
+                                            href="https://www.icrimewatch.net/index.php?AgencyID=54247" style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-19 .item-2" href="#accordion-19 .item-2">Alaska</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-19">
+                                    <div class="card-body">
+                                        <p class="card-text">The Alaska registry provides a single public website that sorts and provides registrant information by name, address, zip code, city name, registration status, or a total list. There is no charge to use the official
+                                            website.You may also search the registry using the Search by Map link. The locations of offender addresses on this web mapping site are approximate based on automated mapping of the address in the registry.
+                                            A number of addresses are only mapped to a general location for a community. Addresses in the registry are being updated to provide better mapping results.Numerous non-governmental, private websites take information
+                                            from Alaska’s registry and link it to maps that can be searched in various ways. These commercial mapping websites can be located through popular Internet search engines by using search terms such as “Alaska
+                                            sex offender/child kidnapper registry mapping services.” Some of the private map services may charge a fee to use their service.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end"
+                                            role="button" href="https://sor.dps.alaska.gov/" style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-19 .item-3" href="#accordion-19 .item-3">Arizona</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-19">
+                                    <div class="card-body">
+                                        <p class="card-text">The Arizona Department of Public Safety maintains this&nbsp;&nbsp;portal as a community service. Please view the Presentation above to get a better understanding of the facts about registered sex offenders. Be sure
+                                            to visit the Safety Tips page and review the information we have provided under the Community Awareness Fliers or the other links. You may print flyers for your use to distribute to your club, school, library
+                                            or group.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=55662&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-3">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-1" href="#accordion-3 .item-1">Arkansas</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-3">
+                                    <div class="card-body">
+                                        <p class="card-text">&nbsp;The Arkansas Crime Information Center (ACIC) is pleased to provide the Sex Offender Registry Search for the citizens of Arkansas. The registry is updated as offender addresses and other offender information
+                                            is updated in our office. You can search for offenders by address, city, county or zip code and see information on the publishable offenders within the map view of the address you enter. You can also search
+                                            for an offender by name if applicable.We also offer Email and Phone Notifications of updates of offender addresses. You can subscribe for notifications on as many addresses as you like and we will notify you
+                                            if an offender moves into the specified radius of the address submitted.<br></p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.ark.org/offender-search/index.php"
+                                            style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-2" href="#accordion-3 .item-2">California</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-3">
+                                    <div class="card-body">
+                                        <p class="card-text">The California Department of Justice has not considered or assessed the specific risk that any convicted sex offender displayed on this website will commit another offense or the nature of any future crimes that
+                                            may be committed. The information appearing on this website is for general informational purposes only and is not intended to provide legal advice to any individual or entity. Please consult with your own legal
+                                            advisor before taking any action based on information appearing on this site or any site to which it may be linked.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end"
+                                            role="button" href="https://www.meganslaw.ca.gov/Disclaimer.aspx" style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-3 .item-3" href="#accordion-3 .item-3">Colorado</a></h5>
+                                </div>
+                                <div class="collapse show item-3" role="tabpanel" data-parent="#accordion-3">
+                                    <div class="card-body">
+                                        <p class="card-text">This site does not display the entire list of registrants in Colorado. This information is being provided to the public, pursuant to Colorado Revised Statute 16-22-111. Any action taken by you towards a registered
+                                            sex offender, including vandalism of property, verbal or written threats of harm or physical assault against this person, his or her family or employer can result in your arrest and prosecution. You must contact
+                                            your local Police Department or Sheriff's Office immediately if you believe a crime is being, or will be committed. If you have any questions regarding this matter, contact your local Police Department or county
+                                            Sheriff's office.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://apps.colorado.gov/apps/dps/sor/search/search-advanced.jsf"
+                                            style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-4">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-1" href="#accordion-4 .item-1">Connecticut</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-4">
+                                    <div class="card-body">
+                                        <p class="card-text">The Connecticut Department of Emergency Services &amp; Public Protection updates this information regularly, to try to assure that it is complete and accurate. However, this information can change quickly and information
+                                            on registered sex offenders is often provided by the registered sex offender themselves as required by law. This information may not have been verified by local law enforcement officials at the time it is posted
+                                            on the website. You are cautioned that the information provided on this site is information of record and may not reflect the current residence, status, or other information regarding a registered sex offender.</p>
+                                        <a
+                                            class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=54567&amp;disc=54567" style="opacity: 1;width: 200px;">Registry Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-2" href="#accordion-4 .item-2">Delaware</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-4">
+                                    <div class="card-body">
+                                        <p class="card-text">Positive identification of a person believed to be a sex offender cannot be established unless the offenders fingerprints are compared against the fingerprints taken at the time of arrest or incarceration. Title
+                                            11, Chapter 85 of the Delaware Code authorizes the State Bureau of Identification to release criminal history record information upon receipt of the subjects fingerprints and a fee established by the Superintendent
+                                            of the Delaware State Police. For more information on this procedure, contact the State Bureau of Identification at (302) 739-5882.Offenders convicted for sex offenses specified under Delaware Law are required
+                                            to register. Persons who have been arrested but not convicted are not required to register.This website includes only those registered sex offenders who have been classified by the courts as moderate-risk or
+                                            high-risk. Those offenders classified as low-risk are not displayed on the public website.<br></p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button"
+                                            href="https://sexoffender.dsp.delaware.gov/" style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-4 .item-3" href="#accordion-4 .item-3">Florida</a></h5>
+                                </div>
+                                <div class="collapse show item-3" role="tabpanel" data-parent="#accordion-4">
+                                    <div class="card-body">
+                                        <p class="card-text">The information you are about to view has been reported directly to FDLE by the Florida Department of Corrections, the Florida Department of Highway Safety and Motor Vehicles, and law enforcement officials. FDLE
+                                            compiles and provides this information for public access and does not independently confirm the accuracy of the information. It is FDLE's desire that the information contained herein be accurate and reliable.</p>
+                                        <a
+                                            class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://offender.fdle.state.fl.us/offender/sops/offenderSearch.jsf" style="opacity: 1;width: 200px;">Registry Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-5">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-1" href="#accordion-5 .item-1">Georgia</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-5">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-2" href="#accordion-5 .item-2">Hawaii</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-5">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-3" href="#accordion-5 .item-3">Idaho</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-5">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-6">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-1" href="#accordion-6 .item-1">Illinois</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-6">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-2" href="#accordion-6 .item-2">Indiana</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-6">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-3" href="#accordion-6 .item-3">Iowa</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-6">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-7">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-7 .item-1" href="#accordion-7 .item-1">Kansas</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-7">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-7 .item-2" href="#accordion-7 .item-2">Kentucky</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-7">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-7 .item-3" href="#accordion-7 .item-3">Louisiana</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-7">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-8">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-8 .item-1" href="#accordion-8 .item-1">Maine</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-8">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-8 .item-2" href="#accordion-8 .item-2">Maryland</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-8">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-8 .item-3" href="#accordion-8 .item-3">Massachusetts</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-8">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-9">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-9 .item-1" href="#accordion-9 .item-1">Michigan</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-9">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-9 .item-2" href="#accordion-9 .item-2">Minnesota</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-9">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-9 .item-3" href="#accordion-9 .item-3">Mississippi</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-9">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-18">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-18 .item-1" href="#accordion-18 .item-1">Missouri</a></h5>
+                                </div>
+                                <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-18">
+                                    <div class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div role="tablist" id="accordion-2">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-1" href="#accordion-2 .item-1">Montana</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        <p class="card-text">Colorado</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-2" href="#accordion-2 .item-2">Nebraska</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-3" href="#accordion-2 .item-3">Nevada</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-2">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-16">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-1" href="#accordion-16 .item-1">New Hampshire</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-16">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-2" href="#accordion-16 .item-2">New Jersey</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-16">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-3" href="#accordion-16 .item-3">New Mexico</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-16">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-15">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-1" href="#accordion-15 .item-1">New York</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-15">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-2" href="#accordion-15 .item-2">North Carolina</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-15">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-3" href="#accordion-15 .item-3">North Dakota</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-15">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-14">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-14 .item-1" href="#accordion-14 .item-1">Ohio</a></h5>
+                                </div>
+                                <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-14">
+                                    <div class="card-body">
+                                        <p class="card-text">The Ohio Attorney General's Office maintains a Sex Offender Registry as a public service tool. Individuals listed on this registry have been convicted of a sexual offense that requires them to meet a number of mandates
+                                            including annual registration with law enforcement. This registry is designed to increase community safety and awareness.This information is meant to educate you about offenders in your County. It has not been
+                                            made available for you to take action against any individual. Any action against an offender which is determined to be a violation of law will subject the violator to arrest and prosecution. Please report all
+                                            information on offenders directly to our office.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=55149&amp;disc="
+                                            style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-2" href="#accordion-14 .item-2">Oklahoma</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-14">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-3" href="#accordion-14 .item-3">Oregon</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-14">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-13">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-1" href="#accordion-13 .item-1">Pennsylvania</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-13">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-2" href="#accordion-13 .item-2">Rhode Island</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-13">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-3" href="#accordion-13 .item-3">South Carolina</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-13">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-12">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-12 .item-1" href="#accordion-12 .item-1">South Dakota</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-12">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-12 .item-2" href="#accordion-12 .item-2">Tennessee</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-12">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-12 .item-3" href="#accordion-12 .item-3">Texas</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-12">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-11">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-11 .item-1" href="#accordion-11 .item-1">Utah</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-11">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-11 .item-2" href="#accordion-11 .item-2">Vermont</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-11">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-11 .item-3" href="#accordion-11 .item-3">Virginia</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-11">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-10">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-10 .item-1" href="#accordion-10 .item-1">Washington</a></h5>
+                                </div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-10">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-10 .item-2" href="#accordion-10 .item-2">West Virginia</a></h5>
+                                </div>
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-10">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-10 .item-3" href="#accordion-10 .item-3">Winsconsin</a></h5>
+                                </div>
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-10">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tablist" id="accordion-17">
+                            <div class="card">
+                                <div class="card-header" role="tab">
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-17 .item-1" href="#accordion-17 .item-1">Wyoming</a></h5>
+                                </div>
+                                <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-17">
+                                    <div class="card-body">
+                                        <p class="card-text">The Division of Criminal Investigation does its best to assure that the information presented here is accurate and current. This site is updated on a regular basis; however the information can change quickly. It
+                                            is possible that information accessed or obtained through this Web site may not reflect current residences, employment, school attendance, or other information regarding such individuals, and users must verify
+                                            registration information with the local registering agency.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sheriffalerts.com/cap_office_disclaimer.php?office=55699&amp;fwd=aHR0cDovL3d3dy5pY3JpbWV3YXRjaC5uZXQvaW5kZXgucGhwP0FnZW5jeUlEPTU1Njk5JmRpc2M9NTU2OTk="
+                                            style="opacity: 1;width: 200px;">Registry Website</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body" style="width: 256.3px;min-width: 45px;max-width: -3px;">
+                            <h4 class="card-title">Victim Notification Network</h4><img width="250" height="100" src="assets/img/vine.png" style="width: 281px;margin: -10px;">
+                            <p style="width: 236px;height: 236px;">VINE is a solution that lets victims of crime and other concerned citizens access timely and reliable information regarding offenders. It is offered free of charge to registrants, is completely confidential, and features multiple
+                                language support.</p>
+                            <div class="container align-items-center" style="margin: 70px;margin-top: 1pc;margin-bottom: 1px;"><a class="btn btn-primary active" role="button" style="margin: -26px;margin-right: -28px;width: 72px;height: 38px;" href="https://www.vinelink.com/#state-selection">GO&nbsp;<i class="fa fa-arrow-right"></i></a></div>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" style="height: 431px;width: 252.238px;">
+                            <h4 class="card-title" style="width: 248px;">Child Welfare Information Gateway</h4><img src="assets/img/child%20info.jpeg" width="200" style="margin: 2px;width: 248px;">
+                            <p class="card-text" style="height: 248px;width: 198px;">If you know or suspect a child is being sexually abused, please report it to your local child protective services. If you are unsure of who to contact, the Child Welfare Information Gateway has a list of contacts.&nbsp; &nbsp;
+                                &nbsp; <br>&nbsp; &nbsp;<br></p>
+                            <div class="container" style="margin: 70px;margin-top: 1px;margin-bottom: 1px;"><a class="btn btn-primary active" role="button" style="margin: -26px;height: 38px;" href="https://www.childwelfare.gov/">GO&nbsp;<i class="fa fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" style="width: 268.3px;">
+                            <h4 class="card-title">Missing &amp; Exploited Children</h4><img src="assets/img/MCMEC.jpg" width="150" style="margin: 34px;margin-top: 0px;margin-bottom: 0px;">
+                            <p class="card-text" style="height: 215px;">The National Center for Missing &amp; Exploited Children&nbsp;is a&nbsp;private,&nbsp;non-profit&nbsp;501(c)(3) corporation whose mission is to help find missing children, reduce child sexual exploitation, and prevent child
+                                victimization.&nbsp;</p>
+                            <div class="container" style="margin: 70px;margin-top: 1px;margin-bottom: 1px;"><a class="btn btn-primary active" role="button" style="margin: -35px;" href="https://www.missingkids.org/HOME">GO&nbsp;<i class="fa fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
+                <div class="card"></div>
+            </footer><span class="text-center">Copyright © LEIP&nbsp;2020</span></div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/Contact-FormModal-Contact-Form-with-Google-Map.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/Table-With-Search.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
