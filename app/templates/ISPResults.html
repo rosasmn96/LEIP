@@ -138,9 +138,53 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="container-fluid">
-                    <h3 class="text-dark mb-1">ISP Information Results</h3>
-                    <p>{{ispRow}}</p>
+                <div class="container">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-dark card-title">{{ispName}}</h2>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 204px;">Contact or Attn</td>
+                                            <td>{{ispContact}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Location</td>
+                                            <td>{{ispLocation}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fax Number</td>
+                                            <td>{{ispFaxNumber}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><a href="#">{{ispEmail}}</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Last Updated</td>
+                                            <td>{{ispLastUpdated}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LE Guide</td>
+                                            <td><a href="#">{{ispLEGuide}}</a>}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time Zone</td>
+                                            <td>{{ispTimeZone}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Info</td>
+                                            <td>{{ispInfo}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer class="bg-white sticky-footer">

@@ -33,17 +33,31 @@ def digitalEvidence():
 
 @app.route('/isp', methods=['GET'])
 def isp():
-    return render_template('ISP.html')
-
-@app.route('/ispResult', methods=['POST'])
-def ispPost():
-    ispName = request.form['ispName']
     os.environ['PATH'] = '/Oracle/instantclient_19_8'
     os.environ['TNS_ADMIN'] = '/Users/madis/Documents/ITNS&SD Sem 10/Senior Design 1/Project/LEIP Database/Wallet'
     con = cx_Oracle.connect('ADMIN', 'L31P_P@$$-w0rd!', 'leip_high')
     cursor = con.cursor()
-    ispRow = cursor.execute("SELECT * FROM isp WHERE name = '" + ispName + "'").fetchone()
-    return render_template('ISPResults.html', ispRow=ispRow)
+    ispName = cursor.execute("SELECT name FROM isp ORDER BY name").fetchall()
+    return render_template('ISP.html', ispName=ispName)
+
+@app.route('/ispresult', methods=['POST'])
+def ispPost():
+    ispIndex = int(request.form['ispIndex'])
+    os.environ['PATH'] = '/Oracle/instantclient_19_8'
+    os.environ['TNS_ADMIN'] = '/Users/madis/Documents/ITNS&SD Sem 10/Senior Design 1/Project/LEIP Database/Wallet'
+    con = cx_Oracle.connect('ADMIN', 'L31P_P@$$-w0rd!', 'leip_high')
+    cursor = con.cursor()
+    ispNameColumn = cursor.execute("SELECT name FROM isp ORDER BY name").fetchall()
+    ispName = ''.join(ispNameColumn[ispIndex])
+    ispContact = ''.join(cursor.execute("SELECT contact_or_attn FROM isp WHERE name='" + ispName + "'").fetchone())
+    ispLocation = ''.join(cursor.execute("SELECT location FROM isp WHERE name='" + ispName + "'").fetchone())
+    ispFaxNumber = ''.join(cursor.execute("SELECT fax_number FROM isp WHERE name='" + ispName + "'").fetchone())
+    ispEmail = ''.join(cursor.execute("SELECT email FROM isp WHERE name='" + ispName + "'").fetchone())
+    ispInfo = ''.join(cursor.execute("SELECT info FROM isp WHERE name='" + ispName + "'").fetchone())
+    ispLastUpdated = ''.join(cursor.execute("SELECT last_updated FROM isp WHERE name='" + ispName + "'").fetchone())
+    ispLEGuide = ''.join(cursor.execute("SELECT le_guide FROM isp WHERE name='" + ispName + "'").fetchone())
+    ispTimeZone = ''.join(cursor.execute("SELECT time_zone FROM isp WHERE name='" + ispName + "'").fetchone())
+    return render_template('ISPResults.html', ispName=ispName, ispContact=ispContact, ispLocation=ispLocation, ispFaxNumber=ispFaxNumber, ispEmail=ispEmail, ispInfo=ispInfo, ispLastUpdated=ispLastUpdated, ispLEGuide=ispLEGuide, ispTimeZone=ispTimeZone)
 
 if __name__ == '__main__':
     app.run()
