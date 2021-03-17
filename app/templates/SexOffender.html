@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Contact-FormModal-Contact-Form-with-Google-Map.css">
     <link rel="stylesheet" href="assets/css/Data-Table-1.css">
     <link rel="stylesheet" href="assets/css/Data-Table.css">
@@ -21,18 +22,18 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body class="text-left" id="page-top">
+<body id="page-top">
     <div></div>
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0"><img src="assets/img/LEIP.png" width="200" height="200">
                 <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/sexoffenderinfo"><i class="fa fa-map-marker"></i><span>Sex Offender Search</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/phonedirectory"><i class="fa fa-book"></i><span>Phone Directory</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/isp"><i class="fa fa-signal"></i><span>Internet Service Provider Information</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/preservedigitalevidence"><i class="fa fa-laptop"></i><span>Preserving Digital Evidence</span></a></li>
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a><a class="nav-link" href="SexOffender.html"><i class="fa fa-map-marker"></i><span>Sex Offender Search</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/sexoffenderinfo"><i class="fa fa-book"></i><span>Sex Offender Registry Directory</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/phonedirectory"><i class="fa fa-signal"></i><span>Phone Directory</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/isp"><i class="fa fa-laptop"></i><span>Internet Service Provider Information</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/preservedigitalevidence"><i class="fa fa-phone"></i><span>Preserving Digital Evidence</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"></div>
             </div>
@@ -42,12 +43,12 @@
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group" style="border-style: none;"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
                                 <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
                             </div>
                         </form>
-                        <ul class="nav navbar-nav flex-nowrap ml-auto">
-                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                        <ul class="navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown">
                                     <form class="form-inline mr-auto navbar-search w-100">
                                         <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
@@ -57,7 +58,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#"></a>
                                     <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
                                         <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
                                             <div class="mr-3">
@@ -85,7 +86,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#"></a>
                                     <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in">
                                         <h6 class="dropdown-header">alerts center</h6><a class="d-flex align-items-center dropdown-item" href="#">
                                             <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
@@ -126,7 +127,7 @@
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img src="assets/img/LEIP-1.png" style="height: 50px;"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
                                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
@@ -142,32 +143,20 @@
                     <div class="row">
                         <div class="clearfix"></div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div role="tablist" id="accordion-1"></div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="text-left text-secondary border-primary">Search sex offender registries for US states. Click the state name for more information.</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <h4 class="text-left text-secondary border-primary">Search sex offender registries for US states. Click the state name for more information.</h4>
-                </div>
                 <div class="row">
-                    <div class="col">
-                        <div role="tablist" id="accordion-19">
+                    <div class="col-auto col-xl-6" style="margin: 8px;">
+                        <div role="tablist" id="accordion-1">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <h5 class="bounce animated mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-19 .item-1" href="#accordion-19 .item-1"></a></h5>
-                                    <div class="card">
-                                        <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button">Alabama</a>
-                                            <div class="collapse" id="collapse-4">
-                                                <div class="card-body">
-                                                    <p class="m-0">&nbsp;The SOR Unit updates this information regularly, however, you are cautioned that the information contained on this site may not reflect the current residence, status, or other information regarding the offender. If you believe that any of the information found in these records is in error, please send us your comments.Prior to including the individual on the website, ALEA did not consider or assess the individual’s specific risk or reoffense or current dangerousness; inclusion on the website is based solely on an individual’s conviction record and state law. The Legislature’s purpose in providing this data is to make the information more easily available and accessible, not to warn about any specific individual.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sheriffalerts.com/cap_office_disclaimer.php?office=54247&amp;fwd=aHR0cDovL3d3dy5jb21tdW5pdHlub3RpZmljYXRpb24uY29tL2NhcF9tYWluLnBocD9vZmZpY2U9NTQyNDc=" style="opacity: 1;width: 200px;">Registry Website</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">Alabama</a></h5>
                                 </div>
-                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-19">
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                     <div class="card-body">
                                         <p class="card-text">The Alabama SOR Unit updates this information regularly, however, you are cautioned that the information contained on this site may not reflect the current residence, status, or other information regarding the offender. If you believe that any of the information found in these records is in error, please send us your comments.Prior to including the individual on the website, ALEA did not consider or assess the individual’s specific risk or reoffense or current dangerousness; inclusion on the website is based solely on an individual’s conviction record and state law. The Legislature’s purpose in providing this data is to make the information more easily available and accessible, not to warn about any specific individual.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=54247" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
@@ -175,16 +164,9 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button">Alaska</a>
-                                        <div class="collapse" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The Alaska registry provides a single public website that sorts and provides registrant information by name, address, zip code, city name, registration status, or a total list. There is no charge to use the official website.You may also search the registry using the&nbsp;<a href="https://sor.dps.alaska.gov/Map">Search By Map</a>&nbsp;link. The locations of offender addresses on this web mapping site are approximate based on automated mapping of the address in the registry. A number of addresses are only mapped to a general location for a community. Addresses in the registry are being updated to provide better mapping results.Numerous non-governmental, private websites take information from Alaska’s registry and link it to maps that can be searched in various ways. These commercial mapping websites can be located through popular Internet search engines by using search terms such as “Alaska sex offender/child kidnapper registry mapping services.” Some of the private map services may charge a fee to use their service.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sor.dps.alaska.gov/Registry/Search" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-19 .item-2" href="#accordion-19 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2">Alaska</a></h5>
                                 </div>
-                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-19">
+                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
                                     <div class="card-body">
                                         <p class="card-text">The Alaska registry provides a single public website that sorts and provides registrant information by name, address, zip code, city name, registration status, or a total list. There is no charge to use the official website.You may also search the registry using the Search by Map link. The locations of offender addresses on this web mapping site are approximate based on automated mapping of the address in the registry. A number of addresses are only mapped to a general location for a community. Addresses in the registry are being updated to provide better mapping results.Numerous non-governmental, private websites take information from Alaska’s registry and link it to maps that can be searched in various ways. These commercial mapping websites can be located through popular Internet search engines by using search terms such as “Alaska sex offender/child kidnapper registry mapping services.” Some of the private map services may charge a fee to use their service.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sor.dps.alaska.gov/" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
@@ -192,16 +174,9 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button">Arizona</a>
-                                        <div class="collapse" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Welcome to the Arizona Sex Offender Information page. This page provides information to the public concerning the location of sex offenders in Arizona. This page is NOT intended to supersede the community notification, but rather, it allows the criminal justice community to promote public awareness concerning the potential threat that sex offenders pose to Arizona citizens. An informed public is a safer public!&nbsp;Realizing that it is impossible to notify every citizen about a sex offender's presence in their community, this site will empower you to obtain information and take the appropriate precautions. Supplying the public with information regarding convicted sex offenders is a critical step towards encouraging the public to protect themselves from potential future acts.&nbsp;</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=55662" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-19 .item-3" href="#accordion-19 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3">Arizona</a></h5>
                                 </div>
-                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-19">
+                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
                                     <div class="card-body">
                                         <p class="card-text">The Arizona Department of Public Safety maintains this&nbsp;&nbsp;portal as a community service. Please view the Presentation above to get a better understanding of the facts about registered sex offenders. Be sure to visit the Safety Tips page and review the information we have provided under the Community Awareness Fliers or the other links. You may print flyers for your use to distribute to your club, school, library or group.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=55662&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
@@ -211,15 +186,7 @@
                         <div role="tablist" id="accordion-3">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Arkansas</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The Arkansas Crime Information Center (ACIC) is pleased to provide the Sex Offender Registry Search for the citizens of Arkansas. The registry is updated as offender addresses and other offender information is updated in our office. You can search for offenders by address, city, county or zip code and see information on the publishable offenders within the map view of the address you enter. You can also search for an offender by name if applicable.We also offer Email and Phone Notifications of updates of offender addresses. You can subscribe for notifications on as many addresses as you like and we will notify you if an offender moves into the specified radius of the address submitted.<a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.ark.org/offender-search/index.php">Registry Website</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-1" href="#accordion-3 .item-1"></a></h5>
-                                    <div class="card"></div>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-1" href="#accordion-3 .item-1">Arkansas</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-3">
                                     <div class="card-body">
@@ -229,14 +196,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">California</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">In 1947, California became the first state in the nation to enact a sex offender registration law that required offenders convicted of specified offenses to register with their local law enforcement agency. This practice is still in place and the California Sex and Arson Registry (CSAR) serves as the statewide repository for information on registered sex offenders. Today, the California Sex Offender Registry continues to provide a wide range of services that support and assist the law enforcement community with the monitoring and registration of over 120,000 California sex offenders. These services include maintaining and providing information to the general public via the California Megan’s Law Internet Web site.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.meganslaw.ca.gov/">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-2" href="#accordion-3 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-2" href="#accordion-3 .item-2">California</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-3">
                                     <div class="card-body">
@@ -246,31 +206,19 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Colorado</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">This site does not display the entire list of registrants in Colorado. This information is being provided to the public, pursuant to Colorado Revised Statute 16-22-111. Any action taken by you towards a registered sex offender, including vandalism of property, verbal or written threats of harm or physical assault against this person, his or her family or employer can result in your arrest and prosecution. You must contact your local Police Department or Sheriff's Office immediately if you believe a crime is being, or will be committed. If you have any questions regarding this matter, contact your local Police Department or county Sheriff's office.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://apps.colorado.gov/apps/dps/sor/search/search-advanced.jsf" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-3" href="#accordion-3 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-3 .item-3" href="#accordion-3 .item-3">Colorado</a></h5>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-3">
-                                    <div class="card-body"></div>
+                                    <div class="card-body">
+                                        <p class="card-text">This site does not display the entire list of registrants in Colorado. This information is being provided to the public, pursuant to Colorado Revised Statute 16-22-111. Any action taken by you towards a registered sex offender, including vandalism of property, verbal or written threats of harm or physical assault against this person, his or her family or employer can result in your arrest and prosecution. You must contact your local Police Department or Sheriff's Office immediately if you believe a crime is being, or will be committed. If you have any questions regarding this matter, contact your local Police Department or county Sheriff's office.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://apps.colorado.gov/apps/dps/sor/search/search-advanced.jsf" style="opacity: 1;width: 200px;">Registry Website</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div role="tablist" id="accordion-4">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Connecticut</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The Connecticut Department of Emergency Services &amp; Public Protection updates this information regularly, to try to assure that it is complete and accurate. However, this information can change quickly and information on registered sex offenders is often provided by the registered sex offender themselves as required by law. This information may not have been verified by local law enforcement officials at the time it is posted on the website. You are cautioned that the information provided on this site is information of record and may not reflect the current residence, status, or other information regarding a registered sex offender.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=54567&amp;disc=54567" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-1" href="#accordion-4 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-1" href="#accordion-4 .item-1">Connecticut</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-4">
                                     <div class="card-body">
@@ -280,14 +228,7 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Delaware</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">This website includes only those registered sex offenders who have been classified by the courts as moderate-risk or high-risk. Those offenders classified as low-risk are not displayed on the public website.&nbsp;</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sexoffender.dsp.delaware.gov/" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-2" href="#accordion-4 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-2" href="#accordion-4 .item-2">Delaware</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-4">
                                     <div class="card-body">
@@ -297,69 +238,43 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Flordia</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The information you are about to view has been reported directly to FDLE by the Florida Department of Corrections, the Florida Department of Highway Safety and Motor Vehicles, and law enforcement officials. FDLE compiles and provides this information for public access and does not independently confirm the accuracy of the information. It is FDLE's desire that the information contained herein be accurate and reliable.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://offender.fdle.state.fl.us/offender/sops/offenderSearch.jsf" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-3" href="#accordion-4 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-4 .item-3" href="#accordion-4 .item-3">Florida</a></h5>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-4">
-                                    <div class="card-body"></div>
+                                    <div class="card-body">
+                                        <p class="card-text">The information you are about to view has been reported directly to FDLE by the Florida Department of Corrections, the Florida Department of Highway Safety and Motor Vehicles, and law enforcement officials. FDLE compiles and provides this information for public access and does not independently confirm the accuracy of the information. It is FDLE's desire that the information contained herein be accurate and reliable.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://offender.fdle.state.fl.us/offender/sops/offenderSearch.jsf" style="opacity: 1;width: 200px;">Registry Website</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div role="tablist" id="accordion-5">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Gerorgia</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">As a general rule, we will not disclose any personally identifiable information collected online to entities outside of State of Georgia departments and agencies except where you have given us permission, or where the information is public information under the Georgia Open Records Act O.C.G.A. 50-18-70 et seq., or other applicable laws. Visitors should be aware that information collected through a Georgia.gov website may be subject to examination and inspection, if such information is a public record or not otherwise protected from disclosure. Please Note: The information contained on the Georgia Sex Offender Registry is updated on a continuous basis. In addition, if you are unable to locate an individual on the Georgia Sex Offender Registry and there is a possibility the individual might reside in another state, please visit other states' sex offender websites and conduct a search. Once you review a registered sex offender’s information on Georgia's public website, you may visit the sheriff’s office local website in the county where the offender is registered to access the offenders' employer addresses, school addresses or vehicle information. If the information is not available, contact the sheriff's office.<a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://state.sor.gbi.ga.gov/Sort_Public/SearchOffender.aspx" style="opacity: 1;width: 200px;">Registry Website</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-1" href="#accordion-5 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-1" href="#accordion-5 .item-1">Georgia</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-5">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="card-text">As a general rule, we will not disclose any personally identifiable information collected online to entities outside of State of Georgia departments and agencies except where you have given us permission, or where the information is public information under the Georgia Open Records Act O.C.G.A. 50-18-70 et seq., or other applicable laws. Visitors should be aware that information collected through a Georgia.gov website may be subject to examination and inspection, if such information is a public record or not otherwise protected from disclosure. Please Note: The information contained on the Georgia Sex Offender Registry is updated on a continuous basis. In addition, if you are unable to locate an individual on the Georgia Sex Offender Registry and there is a possibility the individual might reside in another state, please visit other states' sex offender websites and conduct a search. Once you review a registered sex offender’s information on Georgia's public website, you may visit the sheriff’s office local website in the county where the offender is registered to access the offenders' employer addresses, school addresses or vehicle information. If the information is not available, contact the sheriff's office.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://state.sor.gbi.ga.gov/Sort_Public/SearchOffender.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Hawaii</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Information regarding covered offenders is permitted pursuant to Chapter 846E. Public access to this information is based solely on the fact of each offender's criminal conviction and is not based on an estimate of the offender's level of dangerousness. By allowing the public access to this information, the State makes no representation as to whether the covered offenders listed are dangerous. Any person who uses the information in this registry to injure, harass, or commit a criminal act against any person included in the registry may be subject to criminal prosecution, civil liability, or both.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://sexoffenders.ehawaii.gov/sexoffender/search.html">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-2" href="#accordion-5 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-2" href="#accordion-5 .item-2">Hawaii</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-5">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Information regarding covered offenders is permitted pursuant to Chapter 846E. Public access to this information is based solely on the fact of each offender's criminal conviction and is not based on an estimate of the offender's level of dangerousness. By allowing the public access to this information, the State makes no representation as to whether the covered offenders listed are dangerous. Any person who uses the information in this registry to injure, harass, or commit a criminal act against any person included in the registry may be subject to criminal prosecution, civil liability, or both.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://sexoffenders.ehawaii.gov/sexoffender/search.html">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Idaho</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Sex offender registration in Idaho began on July 1, 1993. It also established a statutory duty for persons convicted of certain felony sex crimes to register with their local sheriff. In 1998, the Legislature repealed the original act and enacted the "Sexual Offenders Registration Notification and Community Right-to-Know Act" to strengthen program administration and to expand public access to central registry information.Also in 1998, they enacted the "Juvenile Sexual Offender Registration Notification and Community Right-to-Know Act." Under the previous law, only juveniles convicted as adults were subject to sex offender registration.Both the new registration laws became effective July 1, 1998. The adult law is codified as&nbsp;<a href="https://legislature.idaho.gov/statutesrules/idstat/Title18/T18CH83/">Title 18, Chapter 83</a>, Idaho Code (sections 18-8301 through 18-8331) and the juvenile law is codified as&nbsp;<a href="https://legislature.idaho.gov/statutesrules/idstat/Title18/T18CH84/">Title 18, Chapter 84</a>&nbsp;Idaho Code (sections 18-8401 through 18-8414).</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.isp.idaho.gov/sor_id/search_regnam.html">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-3" href="#accordion-5 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-5 .item-3" href="#accordion-5 .item-3">Idaho</a></h5>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-5">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Sex offender registration in Idaho began on July 1, 1993. It also established a statutory duty for persons convicted of certain felony sex crimes to register with their local sheriff. In 1998, the Legislature repealed the original act and enacted the "Sexual Offenders Registration Notification and Community Right-to-Know Act" to strengthen program administration and to expand public access to central registry information.Also in 1998, they enacted the "Juvenile Sexual Offender Registration Notification and Community Right-to-Know Act." Under the previous law, only juveniles convicted as adults were subject to sex offender registration.Both the new registration laws became effective July 1, 1998. The adult law is codified as&nbsp;<a href="https://legislature.idaho.gov/statutesrules/idstat/Title18/T18CH83/">Title 18, Chapter 83</a>, Idaho Code (sections 18-8301 through 18-8331) and the juvenile law is codified as&nbsp;<a href="https://legislature.idaho.gov/statutesrules/idstat/Title18/T18CH84/">Title 18, Chapter 84</a>&nbsp;Idaho Code (sections 18-8401 through 18-8414).</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.isp.idaho.gov/sor_id/search_regnam.html">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -367,50 +282,31 @@
                         <div role="tablist" id="accordion-6">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Illinois</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The Sex Offender data search page was created to facilitate access to publicly available information about persons convicted of sex offenses. The primary purpose of providing this information is to make the information easily available and accessible. Anyone who uses this information to commit a criminal act against another person is subject to criminal prosecution.The data contained herein pertains only to those offenders under parole supervision or mandatory supervised release from the Illinois Department of Corrections who are required to register as Sex Offenders per Illinois statute. Less than 2000 of the 18,000+ sex registrants in Illinois are under the supervision of the Illinois Department of Corrections. The address information is updated by the Parole Division of the Department and may differ from that displayed on the Illinois State Police Sex Offender Registry web site;&nbsp;<a href="http://www.isp.state.il.us/sor/">www.isp.state.il.us</a>.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www2.illinois.gov/idoc/Offender/Pages/ParoleeSexRegistrantSearch.aspx">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-1" href="#accordion-6 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-1" href="#accordion-6 .item-1">Illinois</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-6">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Sex Offender data search page was created to facilitate access to publicly available information about persons convicted of sex offenses. The primary purpose of providing this information is to make the information easily available and accessible. Anyone who uses this information to commit a criminal act against another person is subject to criminal prosecution.The data contained herein pertains only to those offenders under parole supervision or mandatory supervised release from the Illinois Department of Corrections who are required to register as Sex Offenders per Illinois statute. Less than 2000 of the 18,000+ sex registrants in Illinois are under the supervision of the Illinois Department of Corrections. The address information is updated by the Parole Division of the Department and may differ from that displayed on the Illinois State Police Sex Offender Registry web site;&nbsp;<a href="http://www.isp.state.il.us/sor/">www.isp.state.il.us</a>.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www2.illinois.gov/idoc/Offender/Pages/ParoleeSexRegistrantSearch.aspx">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Indiana</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Effective January 1, 2003, Zachary's Law required sheriff's departments to jointly establish the Indiana Sex and Violent Offender Registry to provide detailed information about individuals who register as sex or violent offenders in Indiana. The purpose of the registry is to inform the general public about the identity, location, and appearance of sex and violent offenders who live, work, or study in Indiana.On July 1, 2006, the Indiana Department of Correction replaced the Indiana Criminal Justice Institute as the agency that oversees the State's Sex and Violent Offender Registration and Registry efforts. As a part of this new responsibility, the Department provides judges, law enforcement officials, prosecuting attorneys, parole officers, probation officers, and community corrections officials with information and training concerning the requirements of&nbsp;<a href="http://www.in.gov/legislative/ic/code/title11/ar8/ch8.html"><span style="text-decoration: underline;">Indiana Code 11-8-8</span></a>&nbsp;and the use of the Indiana Sex and Violent Offender Registry.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/indiana.php">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-2" href="#accordion-6 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-2" href="#accordion-6 .item-2">Indiana</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-6">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Effective January 1, 2003, Zachary's Law required sheriff's departments to jointly establish the Indiana Sex and Violent Offender Registry to provide detailed information about individuals who register as sex or violent offenders in Indiana. The purpose of the registry is to inform the general public about the identity, location, and appearance of sex and violent offenders who live, work, or study in Indiana.On July 1, 2006, the Indiana Department of Correction replaced the Indiana Criminal Justice Institute as the agency that oversees the State's Sex and Violent Offender Registration and Registry efforts. As a part of this new responsibility, the Department provides judges, law enforcement officials, prosecuting attorneys, parole officers, probation officers, and community corrections officials with information and training concerning the requirements of&nbsp;<a href="http://www.in.gov/legislative/ic/code/title11/ar8/ch8.html"><span style="text-decoration: underline;">Indiana Code 11-8-8</span></a>&nbsp;and the use of the Indiana Sex and Violent Offender Registry.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/indiana.php">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-6 .item-3" href="#accordion-6 .item-3">Iowa</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The State of Iowa and its agencies, officials and employees make no warranty, representation or guaranty as to the content, accuracy, timeliness or completeness of the information provided herein. The State of Iowa, and the Department of Administrative Services, Information Technology Enterprise expressly disclaim any and all liability for any loss or injury caused, in whole or in part, by its actions, omissions, or negligence in procuring, compiling or providing the information contained in this site, including without limitation, liability with respect to any use of this site, or the information contained herein. Reliance on the information contained on this site, is solely at your own risk. The information may change or be altered at any time.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.iowasexoffender.gov/search/">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-6">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The State of Iowa and its agencies, officials and employees make no warranty, representation or guaranty as to the content, accuracy, timeliness or completeness of the information provided herein. The State of Iowa, and the Department of Administrative Services, Information Technology Enterprise expressly disclaim any and all liability for any loss or injury caused, in whole or in part, by its actions, omissions, or negligence in procuring, compiling or providing the information contained in this site, including without limitation, liability with respect to any use of this site, or the information contained herein. Reliance on the information contained on this site, is solely at your own risk. The information may change or be altered at any time.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.iowasexoffender.gov/search/">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -419,45 +315,30 @@
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-7 .item-1" href="#accordion-7 .item-1">Kansas</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The Kansas Bureau of Investigation (KBI) has established this website to facilitate public access to information about persons who have been convicted of certain sex, violent and drug offenses, as set forth in the Kansas Offender Registration Act (K.S.A. 22-4901 et seq.). This information is made available to the public and law enforcement in the interest of public safety. Any unauthorized use of this information is forbidden and subject to criminal prosecution.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.kbi.ks.gov/registeredoffender/SearchOffender.aspx">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-7">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Kansas Bureau of Investigation (KBI) has established this website to facilitate public access to information about persons who have been convicted of certain sex, violent and drug offenses, as set forth in the Kansas Offender Registration Act (K.S.A. 22-4901 et seq.). This information is made available to the public and law enforcement in the interest of public safety. Any unauthorized use of this information is forbidden and subject to criminal prosecution.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.kbi.ks.gov/registeredoffender/SearchOffender.aspx">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-7 .item-2" href="#accordion-7 .item-2">Kentucky</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">Pursuant to KRS 17.580, the Kentucky State Police provides sex offender registration information to the public to promote public safety and awareness by alerting possible victims of potential danger, not to punish or embarass offenders.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="http://kspsor.state.ky.us/">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-7">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Pursuant to KRS 17.580, the Kentucky State Police provides sex offender registration information to the public to promote public safety and awareness by alerting possible victims of potential danger, not to punish or embarrass offenders.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="http://kspsor.state.ky.us/">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-7 .item-3" href="#accordion-7 .item-3">Louisiana</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">This Website is provided as a public service by the Department of Public Safety and Corrections, Louisiana State Police, Bureau of Criminal Identification and Information, State Sex Offender and Child Predator Registry (the Registry). Using this Website, the public has access to public information regarding the reported physical whereabouts or location of convicted sex offenders, sexually violent predators, and child predators. Information provided in this Website is intended to increase public awareness about the presence of sex offenders in local communities, and thus, heighten public safety.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/index.php?AgencyID=54450">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-7">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">This Website is provided as a public service by the Department of Public Safety and Corrections, Louisiana State Police, Bureau of Criminal Identification and Information, State Sex Offender and Child Predator Registry (the Registry). Using this Website, the public has access to public information regarding the reported physical whereabouts or location of convicted sex offenders, sexually violent predators, and child predators. Information provided in this Website is intended to increase public awareness about the presence of sex offenders in local communities, and thus, heighten public safety.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/index.php?AgencyID=54450">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -466,45 +347,30 @@
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-8 .item-1" href="#accordion-8 .item-1">Maine</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The Sex Offender Registry Web Site is maintained by the Maine State Police, State Bureau of Identification and is intended to provide the public information concerning the location of registered offenders currently within Maine. To learn more about what information will be provided, please read the&nbsp;<a href="http://sor.informe.org/sor/faq.htm">Frequently Asked Questions</a>.The Registry does not contain information on all individuals that have been convicted of sex crimes. Information is only provided for those individuals that are required to register pursuant to Title 34-A MRSA, Chapters 15 and 17. Registration is limited to those individuals sentenced for a qualifying offense.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="http://sor.informe.org/cgi-bin/sor/index.pl">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-8">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Sex Offender Registry Web Site is maintained by the Maine State Police, State Bureau of Identification and is intended to provide the public information concerning the location of registered offenders currently within Maine. To learn more about what information will be provided, please read the&nbsp;<a href="http://sor.informe.org/sor/faq.htm">Frequently Asked Questions</a>.The Registry does not contain information on all individuals that have been convicted of sex crimes. Information is only provided for those individuals that are required to register pursuant to Title 34-A MRSA, Chapters 15 and 17. Registration is limited to those individuals sentenced for a qualifying offense.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="http://sor.informe.org/cgi-bin/sor/index.pl">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-8 .item-2" href="#accordion-8 .item-2">Maryland</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The Maryland Sex Offender Registry Website is one of many important tools that families can use to protect themselves, their children, and those they care for from individuals with criminal sexual behaviors. On this site you will be able to find registered sex offenders living and working near you, be notified of registrants' movements, and explore resources that will help you to prevent and get treatment for sexual abuse.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/index.php?AgencyID=56622&amp;disc=56622">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-8">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Maryland Sex Offender Registry Website is one of many important tools that families can use to protect themselves, their children, and those they care for from individuals with criminal sexual behaviors. On this site you will be able to find registered sex offenders living and working near you, be notified of registrants' movements, and explore resources that will help you to prevent and get treatment for sexual abuse.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/index.php?AgencyID=56622&amp;disc=56622">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-8 .item-3" href="#accordion-8 .item-3">Massachusetts</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The Sex Offender Registry Board promotes public safety by educating and informing the public to prevent further victimization. We register and classify convicted sex offenders according to their risk of re-offense and the degree of danger they pose.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://sorb.chs.state.ma.us/sorbpublic/standardSearchforSexOffenders.action?_p=PXgnGplB8Gw4rrN1tBaRlH9o_ozsXxpAnvdMMRYNNu4">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-8">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Sex Offender Registry Board promotes public safety by educating and informing the public to prevent further victimization. We register and classify convicted sex offenders according to their risk of re-offense and the degree of danger they pose.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://sorb.chs.state.ma.us/sorbpublic/standardSearchforSexOffenders.action?_p=PXgnGplB8Gw4rrN1tBaRlH9o_ozsXxpAnvdMMRYNNu4">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -513,45 +379,30 @@
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-9 .item-1" href="#accordion-9 .item-1">Michigan</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The&nbsp;<a href="http://www.legislature.mi.gov/(S(vand4lei4w4h1h45w053qgno))/mileg.aspx?page=getobject&amp;objectname=mcl-act-295-of-1994&amp;queryid=6439389&amp;highlight">Sex Offenders Registration Act, MCL 28.721et seq.</a>, directs the Michigan State Police (MSP) to develop and maintain a public registry and provides guidelines on the type of offender information available to the public. The offense link available on the offender details page reflects the current statute and due to continuous legislative changes, may not be indicative of the statute at the time the offender was convicted.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/index.php?AgencyID=55242">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-9">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The&nbsp;<a href="http://www.legislature.mi.gov/(S(vand4lei4w4h1h45w053qgno))/mileg.aspx?page=getobject&amp;objectname=mcl-act-295-of-1994&amp;queryid=6439389&amp;highlight">Sex Offenders Registration Act, MCL 28.721et seq.</a>, directs the Michigan State Police (MSP) to develop and maintain a public registry and provides guidelines on the type of offender information available to the public. The offense link available on the offender details page reflects the current statute and due to continuous legislative changes, may not be indicative of the statute at the time the offender was convicted.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.icrimewatch.net/index.php?AgencyID=55242">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-9 .item-2" href="#accordion-9 .item-2">Minnesota</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The Minnesota Department of Corrections discloses information on the public registrant search website regarding individuals who are required to register under&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=243.166">Minnesota Statutes 243.166</a>&nbsp;or&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=243.167">243.167</a>&nbsp;who are also subject to public notification according to&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=244.052">Minnesota Statutes 244.052</a>&nbsp;or&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=253D.32">253D.32</a>. The law enforcement agency responsible for disclosing information determines, on a case-by-case basis, what information to disclose. The Minnesota Department of Corrections posts information to this website within 48 hours of receiving authorization from law enforcement.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://coms.doc.state.mn.us/PublicViewer">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-9">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Minnesota Department of Corrections discloses information on the public registrant search website regarding individuals who are required to register under&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=243.166">Minnesota Statutes 243.166</a>&nbsp;or&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=243.167">243.167</a>&nbsp;who are also subject to public notification according to&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=244.052">Minnesota Statutes 244.052</a>&nbsp;or&nbsp;<a href="https://www.revisor.mn.gov/statutes/?id=253D.32">253D.32</a>. The law enforcement agency responsible for disclosing information determines, on a case-by-case basis, what information to disclose. The Minnesota Department of Corrections posts information to this website within 48 hours of receiving authorization from law enforcement.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://coms.doc.state.mn.us/PublicViewer">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-9 .item-3" href="#accordion-9 .item-3">Mississippi</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">Welcome to the Mississippi Sex Offender Registry web site, which lists registered sex offenders in Mississippi. Once you have read and acknowledged the disclaimer below, you may search the database by a specific sex offender’s name, or obtain listing of registrants within a specified distance of an address, or obtain a listing of registrants within a specified Mississippi ZIP code. Also, you may use the map application to search your neighborhood or anywhere throughout the state to determine the specific locations of registrants.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="http://state.sor.dps.ms.gov/SearchOffender.aspx">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-9">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Welcome to the Mississippi Sex Offender Registry web site, which lists registered sex offenders in Mississippi. Once you have read and acknowledged the disclaimer below, you may search the database by a specific sex offender’s name, or obtain listing of registrants within a specified distance of an address, or obtain a listing of registrants within a specified Mississippi ZIP code. Also, you may use the map application to search your neighborhood or anywhere throughout the state to determine the specific locations of registrants.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="http://state.sor.dps.ms.gov/SearchOffender.aspx">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -559,69 +410,45 @@
                         <div role="tablist" id="accordion-18">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-18 .item-1" href="#accordion-18 .item-1">Missouri</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The Sex Offender Registry was created in response to the Missouri Legislature's resolution to facilitate public access to available information about persons registered as sexual offenders. The Missouri State Highway Patrol, Criminal Justice Information Services (CJIS) Division, has not considered or assessed the specific risk of re-offense with regard to any individual prior to his or her inclusion on this web site and has made no determination that any individual included on the web site is currently dangerous. Individuals included on the web site are included solely by virtue of their conviction record and Missouri state law. The primary purpose of providing this information is to make the information easily available and accessible, not to warn about any specific individual.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="https://www.mshp.dps.missouri.gov/CJ38/searchRegistry.jsp">Registry Website</a>
-                                        </div>
-                                    </div>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-18 .item-1" href="#accordion-18 .item-1">Missouri</a></h5>
                                 </div>
-                                <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-18">
-                                    <div class="card-body"></div>
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-18">
+                                    <div class="card-body">
+                                        <p class="m-0">Welcome to the Mississippi Sex Offender Registry web site, which lists registered sex offenders in Mississippi. Once you have read and acknowledged the disclaimer below, you may search the database by a specific sex offender’s name, or obtain listing of registrants within a specified distance of an address, or obtain a listing of registrants within a specified Mississippi ZIP code. Also, you may use the map application to search your neighborhood or anywhere throughout the state to determine the specific locations of registrants.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;" href="http://state.sor.dps.ms.gov/SearchOffender.aspx">Registry Website</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" style="margin: 8px;width: 495.5px;">
                         <div role="tablist" id="accordion-2">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Montana</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Montana’s&nbsp;<a href="http://leg.mt.gov/bills/mca_toc/46_23_5.htm">Sexual or Violent Offender Registration Act</a>&nbsp;is designed to protect the public from sexual or violent offenders by requiring offenders to register with local law enforcement agencies in the jurisdiction where they reside. Information about these offenders is then made available to the public.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://app.doj.mt.gov/apps/svow/search/" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-1" href="#accordion-2 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-1" href="#accordion-2 .item-1">Montana</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
-                                        <p class="card-text">Colorado</p>
+                                        <p class="m-0">Montana’s&nbsp;<a href="http://leg.mt.gov/bills/mca_toc/46_23_5.htm">Sexual or Violent Offender Registration Act</a>&nbsp;is designed to protect the public from sexual or violent offenders by requiring offenders to register with local law enforcement agencies in the jurisdiction where they reside. Information about these offenders is then made available to the public.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://app.doj.mt.gov/apps/svow/search/" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Nebraska</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Nebraska State Statute 29-4002 declares that sex offenders present a high risk to commit repeat offenses and that efforts of law enforcement agencies to protect their communities, conduct investigations, and quickly apprehend sex offenders are impaired by the lack of available information about individuals who have pleaded guilty to or have been found guilty of sex offenses and who live in their jurisdiction. Because of that, the legislature determined that state policy should assist efforts of local law enforcement agencies to protect their communities by requiring sex offenders to register with local law enforcement agencies as provided by the Sex Offender Registration Act.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sor.nebraska.gov/" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-2" href="#accordion-2 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-2" href="#accordion-2 .item-2">Nebraska</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Nebraska State Statute 29-4002 declares that sex offenders present a high risk to commit repeat offenses and that efforts of law enforcement agencies to protect their communities, conduct investigations, and quickly apprehend sex offenders are impaired by the lack of available information about individuals who have pleaded guilty to or have been found guilty of sex offenses and who live in their jurisdiction. Because of that, the legislature determined that state policy should assist efforts of local law enforcement agencies to protect their communities by requiring sex offenders to register with local law enforcement agencies as provided by the Sex Offender Registration Act.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sor.nebraska.gov/" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Nevada</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Welcome to the Nevada Sex Offender Registry Website, which lists registered sex offenders in Nevada. Once you have read and acknowledged the disclaimer below, you may search the database by a specific sex offender’s name, obtain a listing of registrants within a specified distance of an address, or obtain a listing of registrants within a specified Nevada ZIP code.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://www.nvsexoffenders.gov/SearchOffender.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-3" href="#accordion-2 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-3" href="#accordion-2 .item-3">Nevada</a></h5>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Welcome to the Nevada Sex Offender Registry Website, which lists registered sex offenders in Nevada. Once you have read and acknowledged the disclaimer below, you may search the database by a specific sex offender’s name, obtain a listing of registrants within a specified distance of an address, or obtain a listing of registrants within a specified Nevada ZIP code.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://www.nvsexoffenders.gov/SearchOffender.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -629,52 +456,31 @@
                         <div role="tablist" id="accordion-16">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">New Hampshire</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The New Hampshire Department of Safety has established this Web site as its official public internet access site for certain Sex Offender/Offender Against Children registration information. The Registry is a public record and extracted from the New Hampshire Sex Offender/Offender Against Children Registration database. The information on this Web site is NOT the entire list of registered sex offenders in the State of New Hampshire.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://business.nh.gov/nsor/" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-1" href="#accordion-16 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-1" href="#accordion-16 .item-1">New Hampshire</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-16">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The New Hampshire Department of Safety has established this Web site as its official public internet access site for certain Sex Offender/Offender Against Children registration information. The Registry is a public record and extracted from the New Hampshire Sex Offender/Offender Against Children Registration database. The information on this Web site is NOT the entire list of registered sex offenders in the State of New Hampshire.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://business.nh.gov/nsor/" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">New Jersey</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">New Jersey law authorizes the Division of State Police to make available to the public over the Internet information about certain sex offenders required to register under Megan's Law. The sex offender Internet registry law can be found in the New Jersey Code at 2C:7-12 to -19.<a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.sheriffalerts.com/cap_main.php?office=55260" style="opacity: 1;width: 200px;">Registry Website</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-2" href="#accordion-16 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-2" href="#accordion-16 .item-2">New Jersey</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-16">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">New Jersey law authorizes the Division of State Police to make available to the public over the Internet information about certain sex offenders required to register under Megan's Law. The sex offender Internet registry law can be found in the New Jersey Code at 2C:7-12 to -19.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.sheriffalerts.com/cap_main.php?office=55260" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">New Mexico</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The&nbsp;<a href="http://communitynotification.com/nm/newmexico/">Sex Offender Registry</a>&nbsp;is responsible for ensuring compliance by the Sheriff’s Office (Entry) and offenders (Registration). Sex Offender Registry manages the Offender Watch system which is used by the Sheriff’s offices to enter in registrations. This system generates the public website and is also the conduit to NCIC. This unit also assists in the translation of convictions for sex offenders who move to New Mexico from another state. Translation takes into consideration the statues and court decisions from another state and matches it as closely as possible to New Mexico’s statute in order to determine the duration and frequency an offender will need to register. Annually, the registry does a mass mailing to offenders as a reminder of their need to register. This is pursuant to state statute. State statute: NMSA 29-11A-1.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sheriffalerts.com/cap_office_disclaimer.php?office=55290&amp;fwd=aHR0cDovL2NvbW11bml0eW5vdGlmaWNhdGlvbi5jb20vY2FwX21haW4ucGhwP29mZmljZT01NTI5MA==" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-3" href="#accordion-16 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-16 .item-3" href="#accordion-16 .item-3">New Mexico</a></h5>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-16">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The&nbsp;<a href="http://communitynotification.com/nm/newmexico/">Sex Offender Registry</a>&nbsp;is responsible for ensuring compliance by the Sheriff’s Office (Entry) and offenders (Registration). Sex Offender Registry manages the Offender Watch system which is used by the Sheriff’s offices to enter in registrations. This system generates the public website and is also the conduit to NCIC. This unit also assists in the translation of convictions for sex offenders who move to New Mexico from another state. Translation takes into consideration the statues and court decisions from another state and matches it as closely as possible to New Mexico’s statute in order to determine the duration and frequency an offender will need to register. Annually, the registry does a mass mailing to offenders as a reminder of their need to register. This is pursuant to state statute. State statute: NMSA 29-11A-1.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sheriffalerts.com/cap_office_disclaimer.php?office=55290&amp;fwd=aHR0cDovL2NvbW11bml0eW5vdGlmaWNhdGlvbi5jb20vY2FwX21haW4ucGhwP29mZmljZT01NTI5MA==" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -682,52 +488,31 @@
                         <div role="tablist" id="accordion-15">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">New York</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">New York State’s Sex Offender Registry&nbsp;was created by the state’s Sex Offender Registration Act. It is intended to provide the public with information on the status and location of sex offenders residing in New York State.&nbsp;&nbsp;</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-1" href="#accordion-15 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-1" href="#accordion-15 .item-1">New York</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-15">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">New York State’s Sex Offender Registry&nbsp;was created by the state’s Sex Offender Registration Act. It is intended to provide the public with information on the status and location of sex offenders residing in New York State.&nbsp;&nbsp;</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">North Carolina</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The North Carolina General Assembly created the North Carolina Sex Offender and Public Protection Registry in January 1996. This law outlines registration requirements for persons living in North Carolina, non-resident students and non-resident workers.<br>The Registry serves as a resource to help protect and inform the public.&nbsp;<a href="https://docs.ncsbi.gov/Sex-Offender/SexOffenderRegPrograms.aspx">The North Carolina Sex Offender Registration Program</a>, a publication of the North Carolina Sheriffs' Association, provides more detailed information about the state’s Sex Offender Registry.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sexoffender.ncsbi.gov/search.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-2" href="#accordion-15 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-2" href="#accordion-15 .item-2">North Carolina</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-15">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The North Carolina General Assembly created the North Carolina Sex Offender and Public Protection Registry in January 1996. This law outlines registration requirements for persons living in North Carolina, non-resident students and non-resident workers.<br>The Registry serves as a resource to help protect and inform the public.&nbsp;<a href="https://docs.ncsbi.gov/Sex-Offender/SexOffenderRegPrograms.aspx">The North Carolina Sex Offender Registration Program</a>, a publication of the North Carolina Sheriffs' Association, provides more detailed information about the state’s Sex Offender Registry.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sexoffender.ncsbi.gov/search.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">North Dakota</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Sex offenders have always lived in our communities, and the accompanying risks have always been present. This method of public notification is an acceptable way of reducing that risk and enhancing public protection. Any actions taken against these offenders, including vandalism of property, intimidation, harassment or verbal or written threats of harm against these subjects or their families, landlords, or employers, are not acceptable, and will likely result in arrest and prosecution of those persons.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://www.sexoffender.nd.gov/OffenderWeb/search/publiclist" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-3" href="#accordion-15 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-15 .item-3" href="#accordion-15 .item-3">North Dakota</a></h5>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-15">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Sex offenders have always lived in our communities, and the accompanying risks have always been present. This method of public notification is an acceptable way of reducing that risk and enhancing public protection. Any actions taken against these offenders, including vandalism of property, intimidation, harassment or verbal or written threats of harm against these subjects or their families, landlords, or employers, are not acceptable, and will likely result in arrest and prosecution of those persons.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://www.sexoffender.nd.gov/OffenderWeb/search/publiclist" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -735,50 +520,31 @@
                         <div role="tablist" id="accordion-14">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Ohio</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The Ohio Attorney General's Office maintains a Sex Offender Registry as a public service tool. Individuals listed on this registry have been convicted of a sexual offense that requires them to meet a number of mandates including annual registration with law enforcement. This registry is designed to increase community safety and awareness.This information is meant to educate you about offenders in your County. It has not been made available for you to take action against any individual. Any action against an offender which is determined to be a violation of law will subject the violator to arrest and prosecution. Please report all information on offenders directly to our office.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=55149&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-1" href="#accordion-14 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-1" href="#accordion-14 .item-1">Ohio</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-14">
-                                    <div class="card-body"></div>
+                                    <div class="card-body">
+                                        <p class="card-text">The Ohio Attorney General's Office maintains a Sex Offender Registry as a public service tool. Individuals listed on this registry have been convicted of a sexual offense that requires them to meet a number of mandates including annual registration with law enforcement. This registry is designed to increase community safety and awareness.This information is meant to educate you about offenders in your County. It has not been made available for you to take action against any individual. Any action against an offender which is determined to be a violation of law will subject the violator to arrest and prosecution. Please report all information on offenders directly to our office.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=55149&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Oklahoma</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Welcome to the official State of Oklahoma Sex Offender Registry web site. Once you have read and acknowledged the information and disclaimer below, you may search the site by a specific offender’s name; obtain a listing of offenders by various combinations such as county, city, crime, appearance, etc.; or obtain a listing of offenders within a specified Oklahoma zip code or within a defined radius of an address. You may also register for the Community Notification system so that you can be notified by email when a registered sex offender moves into the specified radius of the address submitted. The Oklahoma Sex Offender Registry, maintained by the Oklahoma Department of Corrections, provides public information on sex offenders required to register pursuant to the Sex Offenders Registration Act, 57 O.S. 581-590.2. The Act applies to any person residing, working, or attending school within the state who has been convicted or received any probationary term for a sex crime in the state after November 1, 1989, or has entered the state after November 1, 1989, having previously been convicted or received any probationary term for a sex crime.&nbsp;</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sors.doc.state.ok.us/svor/f?p=119:5:0::NO" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-2" href="#accordion-14 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-2" href="#accordion-14 .item-2">Oklahoma</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-14">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Welcome to the official State of Oklahoma Sex Offender Registry web site. Once you have read and acknowledged the information and disclaimer below, you may search the site by a specific offender’s name; obtain a listing of offenders by various combinations such as county, city, crime, appearance, etc.; or obtain a listing of offenders within a specified Oklahoma zip code or within a defined radius of an address. You may also register for the Community Notification system so that you can be notified by email when a registered sex offender moves into the specified radius of the address submitted. The Oklahoma Sex Offender Registry, maintained by the Oklahoma Department of Corrections, provides public information on sex offenders required to register pursuant to the Sex Offenders Registration Act, 57 O.S. 581-590.2. The Act applies to any person residing, working, or attending school within the state who has been convicted or received any probationary term for a sex crime in the state after November 1, 1989, or has entered the state after November 1, 1989, having previously been convicted or received any probationary term for a sex crime.&nbsp;</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sors.doc.state.ok.us/svor/f?p=119:5:0::NO" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Oregon</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">This website&nbsp;<strong><span style="text-decoration: underline;">only</span></strong>&nbsp;lists offenders classified as&nbsp;<strong><span style="text-decoration: underline;">Level 3 Sex Offenders</span></strong>&nbsp;(who present the highest risk of reoffending and require the widest range of notification) under Oregon Revised Statutes (ORS) 163A.100. ORS 163A.215 directs the Oregon State Police (OSP) to release information about level 3 sex offenders on a website, unless the offender is under supervision of the Psychiatric Security Review Board (PSRB). PSRB may authorize OSP to release information on a level 3 sex offender under their supervision, on this website, by request.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sexoffenders.oregon.gov/Search" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-3" href="#accordion-14 .item-3"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-14 .item-3" href="#accordion-14 .item-3">Oregon</a></h5>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-14">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">This website&nbsp;<strong><span style="text-decoration: underline;">only</span></strong>&nbsp;lists offenders classified as&nbsp;<strong><span style="text-decoration: underline;">Level 3 Sex Offenders</span></strong>&nbsp;(who present the highest risk of reoffending and require the widest range of notification) under Oregon Revised Statutes (ORS) 163A.100. ORS 163A.215 directs the Oregon State Police (OSP) to release information about level 3 sex offenders on a website, unless the offender is under supervision of the Psychiatric Security Review Board (PSRB). PSRB may authorize OSP to release information on a level 3 sex offender under their supervision, on this website, by request.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sexoffenders.oregon.gov/Search" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -786,50 +552,31 @@
                         <div role="tablist" id="accordion-13">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Pennsylvania</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">Pennsylvania's General Assembly has determined public safety will be enhanced by making information about registered sexual offenders available to the public through the internet. Knowledge whether a person is a registered sexual offender could be a significant factor in protecting yourself, your family members, or persons in your care from recidivist acts by registered sexual offenders. Public access to information about registered sexual offenders is intended solely as a means of public protection, any other use prohibited.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.pameganslaw.state.pa.us/" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-1" href="#accordion-13 .item-1"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-1" href="#accordion-13 .item-1">Pennsylvania</a></h5>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-13">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Pennsylvania's General Assembly has determined public safety will be enhanced by making information about registered sexual offenders available to the public through the internet. Knowledge whether a person is a registered sexual offender could be a significant factor in protecting yourself, your family members, or persons in your care from recidivist acts by registered sexual offenders. Public access to information about registered sexual offenders is intended solely as a means of public protection, any other use prohibited.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.pameganslaw.state.pa.us/" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <div class="shadow card"><a class="btn btn-link btn-lg text-left card-header font-weight-bold" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4" href="#collapse-4" role="button">Rhode Island</a>
-                                        <div class="collapse show" id="collapse-4">
-                                            <div class="card-body">
-                                                <p class="m-0">The RI Sex Offender Registry maintains this&nbsp;<strong><em>OffenderWatch®</em></strong>&nbsp;portal as a community service. Please view the Presentation above to get a better understanding of the facts about registered sex offenders and what our office is doing to comply with the law. Be sure to visit the Safety Tips page and review the information we have provided under the Community Awareness Fliers or the other links. You may print flyers for your use to distribute to your club, school, library or group.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=56404&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-2" href="#accordion-13 .item-2"></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-2" href="#accordion-13 .item-2">Rhode Island</a></h5>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-13">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The RI Sex Offender Registry maintains this&nbsp;<strong><em>OffenderWatch®</em></strong>&nbsp;portal as a community service. Please view the Presentation above to get a better understanding of the facts about registered sex offenders and what our office is doing to comply with the law. Be sure to visit the Safety Tips page and review the information we have provided under the Community Awareness Fliers or the other links. You may print flyers for your use to distribute to your club, school, library or group.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=56404&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-13 .item-3" href="#accordion-13 .item-3">South Carolina</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">South Carolina has moved to a new sex offender management application called SORT. SORT is provided at no charge by the U.S. Department of Justice to the State of South Carolina. SORT is designed to make the sex offender registry process as efficient and effective as possible. This streamlined process also provides improved information sharing across all jurisdictions. SORT provides community notifications and automatic updates to the National Sex Offender Public Web Site. Other features include multiple photographs of the offender over time, a visual map of where the offender lives, a list of aliases the offender has used in the past, and a list of all of the sexually related offenses that an offender has been convicted of committing.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://scor.sled.sc.gov/GeographicalSearch.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-13">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">South Carolina has moved to a new sex offender management application called SORT. SORT is provided at no charge by the U.S. Department of Justice to the State of South Carolina. SORT is designed to make the sex offender registry process as efficient and effective as possible. This streamlined process also provides improved information sharing across all jurisdictions. SORT provides community notifications and automatic updates to the National Sex Offender Public Web Site. Other features include multiple photographs of the offender over time, a visual map of where the offender lives, a list of aliases the offender has used in the past, and a list of all of the sexually related offenses that an offender has been convicted of committing.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="http://scor.sled.sc.gov/GeographicalSearch.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -838,45 +585,30 @@
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-12 .item-1" href="#accordion-12 .item-1">South Dakota</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">In 2006 the South Dakota State Legislature amended the sex offender registry laws to provide a public access internet site which lists all offenders registered in the State.The Division of Criminal Investigation does its best to assure that the information presented here is accurate and current. This site is updated on a regular basis; however the information can change quickly. It is possible that information accessed or obtained through this Web site may not reflect current residences, employment, school attendance, or other information regarding such individuals, and users must verify registration information with the local registering agency.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.nsopw.gov/en/Search/Results" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-12">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">In 2006 the South Dakota State Legislature amended the sex offender registry laws to provide a public access internet site which lists all offenders registered in the State.The Division of Criminal Investigation does its best to assure that the information presented here is accurate and current. This site is updated on a regular basis; however the information can change quickly. It is possible that information accessed or obtained through this Web site may not reflect current residences, employment, school attendance, or other information regarding such individuals, and users must verify registration information with the local registering agency.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.nsopw.gov/en/Search/Results" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-12 .item-2" href="#accordion-12 .item-2">Tennessee</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">he Tennessee Bureau of Investigation (TBI) does not guarantee its accuracy or completeness. The information contained in an offender's record does not imply listed individuals will commit a specific type of crime in the future, nor does it imply that if a future crime is committed by a listed individual what the nature of that crime may be. The TBI makes no representation as to any offender's likelihood of re-offending. If you believe that information concerning a specific offender is incorrect, please contact the Tennessee Bureau of Investigation, Sex Offender Registry at 1 (888) 837-4170.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sor.tbi.tn.gov/SOMainpg.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-12">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Tennessee Bureau of Investigation (TBI) does not guarantee its accuracy or completeness. The information contained in an offender's record does not imply listed individuals will commit a specific type of crime in the future, nor does it imply that if a future crime is committed by a listed individual what the nature of that crime may be. The TBI makes no representation as to any offender's likelihood of re-offending. If you believe that information concerning a specific offender is incorrect, please contact the Tennessee Bureau of Investigation, Sex Offender Registry at 1 (888) 837-4170.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sor.tbi.tn.gov/SOMainpg.aspx" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-12 .item-3" href="#accordion-12 .item-3">Texas</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The Texas Department of Public Safety (TxDPS) implemented this website to allow for public access to sex offender registration (SOR) information within the State of Texas. This information is reported, collected, and disseminated pursuant to Chapter 62, Texas Code of Criminal Procedure. The TxDPS is the designated repository of SOR information for the state. Offenders report to local criminal justice agencies which collect and submit registration information to the registry. The TxDPS does not separately confirm the accuracy of the reported information. Please report any errors on the registry to the local criminal justice agency that submitted the information to investigate and update the record if appropriate.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://publicsite.dps.texas.gov/SexOffenderRegistry/Search" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-12">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The Texas Department of Public Safety (TxDPS) implemented this website to allow for public access to sex offender registration (SOR) information within the State of Texas. This information is reported, collected, and disseminated pursuant to Chapter 62, Texas Code of Criminal Procedure. The TxDPS is the designated repository of SOR information for the state. Offenders report to local criminal justice agencies which collect and submit registration information to the registry. The TxDPS does not separately confirm the accuracy of the reported information. Please report any errors on the registry to the local criminal justice agency that submitted the information to investigate and update the record if appropriate.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://publicsite.dps.texas.gov/SexOffenderRegistry/Search" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -885,45 +617,30 @@
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-11 .item-1" href="#accordion-11 .item-1">Utah</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">Registration is also required of individuals who are committed to the Utah State Hospital by reason of their mental condition and who also have committed or been alleged to have committed any of the listed offenses.Offenders convicted in the State of Utah of the offenses listed below may be eligible to petition the court for early removal from the registry 5 years after completion of the sentence. Contact the State of Utah, Bureau of Criminal Identification at (801) 965-4445 ext. #8 for further information. Certain restrictions apply.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=54438&amp;disc=54438" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-11">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Registration is also required of individuals who are committed to the Utah State Hospital by reason of their mental condition and who also have committed or been alleged to have committed any of the listed offenses.Offenders convicted in the State of Utah of the offenses listed below may be eligible to petition the court for early removal from the registry 5 years after completion of the sentence. Contact the State of Utah, Bureau of Criminal Identification at (801) 965-4445 ext. #8 for further information. Certain restrictions apply.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=54438&amp;disc=54438" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-11 .item-2" href="#accordion-11 .item-2">Vermont</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">Local law enforcement agencies and the Vermont&nbsp;Crime Information Center are authorized to release relevant registry information to the public when the requestor can articulate a specific concern about their safety or the safety of another. State statute requires that the requestor provide the name of a subject as the basis for the query. Queries made to law enforcement agencies or VCIC may not be done by street address, town or county.<br></p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sheriffalerts.com/cap_office_disclaimer.php?office=55275&amp;fwd=aHR0cDovL3d3dy5jb21tdW5pdHlub3RpZmljYXRpb24uY29tL2NhcF9tYWluLnBocD9vZmZpY2U9NTUyNzU=" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-11">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Local law enforcement agencies and the Vermont&nbsp;Crime Information Center are authorized to release relevant registry information to the public when the requestor can articulate a specific concern about their safety or the safety of another. State statute requires that the requestor provide the name of a subject as the basis for the query. Queries made to law enforcement agencies or VCIC may not be done by street address, town or county.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sheriffalerts.com/cap_office_disclaimer.php?office=55275&amp;fwd=aHR0cDovL3d3dy5jb21tdW5pdHlub3RpZmljYXRpb24uY29tL2NhcF9tYWluLnBocD9vZmZpY2U9NTUyNzU=" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-11 .item-3" href="#accordion-11 .item-3">Virginia</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">The registry, including the Public Notification Database, is based on the Virginia General Assembly's decision to facilitate access to publicly-available information about persons convicted of specified offenses. The Virginia State Police has not considered or assessed the specific risk of re-offense with regard to any individual prior to his or her inclusion within this registry, and has made no determination that any individual included in the registry is currently dangerous. The main purpose of providing this data on the internet is to make the information more easily available and accessible, not to warn citizens about any specific individual.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sex-offender.vsp.virginia.gov/sor/index.html" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-11">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">The registry, including the Public Notification Database, is based on the Virginia General Assembly's decision to facilitate access to publicly-available information about persons convicted of specified offenses. The Virginia State Police has not considered or assessed the specific risk of re-offense with regard to any individual prior to his or her inclusion within this registry, and has made no determination that any individual included in the registry is currently dangerous. The main purpose of providing this data on the internet is to make the information more easily available and accessible, not to warn citizens about any specific individual.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sex-offender.vsp.virginia.gov/sor/index.html" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -932,45 +649,30 @@
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-10 .item-1" href="#accordion-10 .item-1">Washington</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">RCW 4.24550(5)(a) requires that the Washington Association of Sheriffs and Police Chiefs create and maintain a statewide registered kidnapping and sex offender website, which shall be available to the public. The website shall post all level II and III registered sex offenders, level I registered sex offenders only during the time they are out of compliance with registration requirements under RCW 9A.44.130 or if lacking a fixed residence as provided in RCW 9A.44.130, and all registered kidnapping offenders in the state of Washington.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=54528&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-1" role="tabpanel" data-parent="#accordion-10">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">RCW 4.24550(5)(a) requires that the Washington Association of Sheriffs and Police Chiefs create and maintain a statewide registered kidnapping and sex offender website, which shall be available to the public. The website shall post all level II and III registered sex offenders, level I registered sex offenders only during the time they are out of compliance with registration requirements under RCW 9A.44.130 or if lacking a fixed residence as provided in RCW 9A.44.130, and all registered kidnapping offenders in the state of Washington.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=54528&amp;disc=" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-10 .item-2" href="#accordion-10 .item-2">West Virginia</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">This information is provided in the interest of public safety and should be used only in order to take appropriate precautions. The information accessed through the use of this website may not be used to threaten, intimidate or harass registered sex offenders and violations of law will be investigated by the West Virginia State Police.If you believe that information contained within this site is not correct, you are encouraged to contact the Registry at (304) 746-2133 or e-mail us at registry@wvsp.gov.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://apps.wv.gov/StatePolice/SexOffender/" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-2" role="tabpanel" data-parent="#accordion-10">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">This information is provided in the interest of public safety and should be used only in order to take appropriate precautions. The information accessed through the use of this website may not be used to threaten, intimidate or harass registered sex offenders and violations of law will be investigated by the West Virginia State Police.If you believe that information contained within this site is not correct, you are encouraged to contact the Registry at (304) 746-2133 or e-mail us at registry@wvsp.gov.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://apps.wv.gov/StatePolice/SexOffender/" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-10 .item-3" href="#accordion-10 .item-3">Winsconsin</a></h5>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p class="card-text">Registered sex offenders have reported receiving calls from an individual(s) claiming to be a law enforcement official/Wisconsin Department of Corrections Sex Offender Registry, telling the registrant that they are not complying with registration/DNA requirements. In some cases the scam caller has claimed there is a warrant for the registrant's arrest or states there is a court order to obtain a new DNA sample. The scam caller tells the registrant the ONLY way the issue can be resolved is by buying a cash card or arranging a money transfer, citing the need for bail or a fine payment.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://appsdoc.wi.gov/public/offenders" style="opacity: 1;width: 200px;">Registry Website</a>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="collapse item-3" role="tabpanel" data-parent="#accordion-10">
                                     <div class="card-body">
-                                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <p class="m-0">Registered sex offenders have reported receiving calls from an individual(s) claiming to be a law enforcement official/Wisconsin Department of Corrections Sex Offender Registry, telling the registrant that they are not complying with registration/DNA requirements. In some cases the scam caller has claimed there is a warrant for the registrant's arrest or states there is a court order to obtain a new DNA sample. The scam caller tells the registrant the ONLY way the issue can be resolved is by buying a cash card or arranging a money transfer, citing the need for bail or a fine payment.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://appsdoc.wi.gov/public/offenders" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -978,11 +680,11 @@
                         <div role="tablist" id="accordion-17">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-17 .item-1" href="#accordion-17 .item-1">Wyoming</a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-17 .item-1" href="#accordion-17 .item-1">Wyoming</a></h5>
                                 </div>
-                                <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-17">
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-17">
                                     <div class="card-body">
-                                        <p class="card-text">In 2007 the Wyoming State Legislature amended the sex offender registry laws to provide a public access internet site which lists all offenders registered in the State.The Division of Criminal Investigation does its best to assure that the information presented here is accurate and current. This site is updated on a regular basis; however the information can change quickly. It is possible that information accessed or obtained through this Web site may not reflect current residences, employment, school attendance, or other information regarding such individuals, and users must verify registration information with the local registering agency.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://www.icrimewatch.net/index.php?AgencyID=55699&amp;disc=54528" style="opacity: 1;width: 200px;">Registry Website</a>
+                                        <p class="card-text">The Division of Criminal Investigation does its best to assure that the information presented here is accurate and current. This site is updated on a regular basis; however the information can change quickly. It is possible that information accessed or obtained through this Web site may not reflect current residences, employment, school attendance, or other information regarding such individuals, and users must verify registration information with the local registering agency.</p><a class="btn btn-primary btn-lg d-xl-flex align-self-center flex-wrap mr-auto align-items-xl-end" role="button" href="https://sheriffalerts.com/cap_office_disclaimer.php?office=55699&amp;fwd=aHR0cDovL3d3dy5pY3JpbWV3YXRjaC5uZXQvaW5kZXgucGhwP0FnZW5jeUlEPTU1Njk5JmRpc2M9NTU2OTk=" style="opacity: 1;width: 200px;">Registry Website</a>
                                     </div>
                                 </div>
                             </div>
@@ -991,6 +693,9 @@
                 </div>
             </div>
             <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
                 <div class="card-group">
                     <div class="card">
                         <div class="card-body" style="width: 256.3px;min-width: 45px;max-width: -3px;">
@@ -1015,15 +720,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"></div>
-                </div>
-                <div class="card"></div>
-            </footer><span class="text-center">Copyright © LEIP&nbsp;2020</span>
+                <div class="card"></div><span class="text-center" style="width: 948px;margin: 2px;padding: 5px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Copyright © LEIP&nbsp;2020</span>
+            </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>

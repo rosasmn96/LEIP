@@ -19,11 +19,11 @@ def phoneDirectory():
     os.environ['TNS_ADMIN'] = '/Users/madis/Documents/ITNS&SD Sem 10/Senior Design 1/Project/LEIP Database/Wallet'
     con = cx_Oracle.connect('ADMIN', 'L31P_P@$$-w0rd!', 'leip_high')
     cursor = con.cursor()
-    pdAgency = cursor.execute("SELECT agency FROM phonedirectory ORDER BY agency").fetchall()
-    pdCounty = cursor.execute("SELECT county FROM phonedirectory ORDER BY agency").fetchall()
-    pdTownship = cursor.execute("SELECT township FROM phonedirectory ORDER BY agency").fetchall()
-    pdCincyPhoneDirectory = cursor.execute("SELECT cincinnati_phone_directory FROM phonedirectory ORDER BY agency").fetchall()
-    pdPhoneNumber = cursor.execute("SELECT phone_number FROM phonedirectory ORDER BY agency").fetchall()
+    pdAgency = cursor.execute("SELECT agency FROM phonedirectory ORDER BY agency, cincinnati_phone_directory").fetchall()
+    pdCounty = cursor.execute("SELECT county FROM phonedirectory ORDER BY agency, cincinnati_phone_directory").fetchall()
+    pdTownship = cursor.execute("SELECT township FROM phonedirectory ORDER BY agency, cincinnati_phone_directory").fetchall()
+    pdCincyPhoneDirectory = cursor.execute("SELECT cincinnati_phone_directory FROM phonedirectory ORDER BY agency, cincinnati_phone_directory").fetchall()
+    pdPhoneNumber = cursor.execute("SELECT phone_number FROM phonedirectory ORDER BY agency, cincinnati_phone_directory").fetchall()
     return render_template('PhoneDirectory.html', pdAgency=pdAgency, pdCounty=pdCounty, pdTownship=pdTownship, pdCincyPhoneDirectory=pdCincyPhoneDirectory, pdPhoneNumber=pdPhoneNumber)
     
 
