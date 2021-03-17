@@ -8,17 +8,32 @@
         function hideOrShow() {
             var httpMethod = {{httpMethod|tojson}};
 
+            function populateDropdown(selected) {
+                var ispNames = {{ispNames|tojson}};
+                var i;
+                var html = '';
+
+                for (i = 0; i<ispNames.length; i++) {
+                    html += '<option value="' + [i] + '">' + ispNames[i] + '</option>';
+                }
+
+                document.getElementById("ispNameInput").innerHTML = selected + html;
+            }
+
             function hideResultsTable() {
                 document.getElementById('resultsTable').style.visibility="hidden";
             }
+
             function showResultsTable() {
                 document.getElementById('resultsTable').style.visibility="visible";
             }
 
             if (httpMethod == "POST") {
+                populateDropdown('<option selected>' + {{ispName|tojson}} + '</option>');
                 showResultsTable();
             }
             else {
+                populateDropdown('<option selected>Search...</option>')
                 hideResultsTable();
             }
         }
@@ -99,18 +114,6 @@
                             <form action="/isp" method="POST">
                                 <div class="input-group">
                                     <select class="custom-select" name="ispIndex" id="ispNameInput" aria-label="Example select with button addon">
-                                        <option id="ispSelected" selected></option>
-                                        <script>
-                                            var ispNames = {{ispNames|tojson}};
-                                            var i;
-                                            var html = "";
-
-                                            for (i = 0; i<ispNames.length; i++) {
-                                                html += '<option value="' + [i] + '">' + ispNames[i] + '</option>';
-                                            }
-
-                                            document.getElementById("ispNameInput").innerHTML = html;
-                                        </script>
                                     </select>
                                     <button class="btn btn-primary" type="submit">Search</button>
                                 </div>
